@@ -48,3 +48,7 @@ const ricette = [
         tags: ["Torta", "Dolce", "Molto Buono"]
     },
 ]
+
+app.get("/bacheca", (req, res) => {
+    res.json(ricette)
+})
